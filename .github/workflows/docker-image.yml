@@ -10,11 +10,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Debug Image Name
-      run: echo ${{ secrets.DOCKER_USERNAME }}/115-pc:latest
+      run: echo ${{secrets.DOCKER_USERNAME}}/115-pc:latest
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag 115-pc:lastest
     - name: Push Docker Image
       run: |
-        docker push ${{ secrets.DOCKER_USERNAME }}/115-pc:latest
+        docker push ${{secrets.DOCKER_USERNAME}}/115-pc:latest
     
   
