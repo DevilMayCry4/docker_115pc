@@ -16,7 +16,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag 115-pc:lastest
-    - name: Push Docker Image
+    - name: Push Docker Image s
       run: |
         docker push ivirgil/115-pc:latest
     
